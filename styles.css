@@ -1,0 +1,98 @@
+body {
+  font-family: 'Cormorant Garamond', 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  background: #f1edeb;
+}
+
+a {
+    color: #f1edeb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background: #c2aaa8;
+}
+
+.navbar-title {
+    font-size: 2em;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar-item {
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 100%;
+}
+
+.hero-image {
+    background-image: url("/boomrock-view.jpeg");
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.event {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.event-date-and-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-details {
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center
+}
+
+.big-name {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.big-name-name {
+    font-size: 60px;
+}
+
+.big-name-and {
+    font-size: 40px;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 0.05em;
+}
