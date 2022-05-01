@@ -7,7 +7,7 @@ function HomePage() {
       <div class="full-screen-centered">
         <div class="big-name">
           <span class="big-name-name">Georgina Elizabeth</span>
-          <span class="big-name-and">and</span>
+          <span class="big-name-and">AND</span>
           <span class="big-name-name">Chris Dawson</span>
         </div>
       </div>

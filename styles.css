@@ -39,6 +39,10 @@ a:hover {
     max-width: 100%;
 }
 
+.content {
+    padding-top: 24px;
+}
+
 /************************************/
 /* Navbar */
 
@@ -82,8 +86,8 @@ a:hover {
     padding-top: 4rem;
 }
 
-.hidden {
-    display: none;
+.closed-menu {
+    transform: translateY(-100%);
 }
 
 .navbar-item {
@@ -108,6 +112,8 @@ a:hover {
     font-size: 2em;
     color: var(--light-bg-color);
     font-family: 'Arial';
+    padding-left: 8px;
+    padding-top: 2px;
 }
 
 /**************************************/
@@ -115,7 +121,7 @@ a:hover {
 
 .hero-image {
     background-image: url("/boomrock-view-2.jpeg");
-    height: 500px;
+    height: 220px;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -158,24 +164,20 @@ a:hover {
     padding-top: 8vw;
     padding-bottom: 8vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 8vw;
+    gap: 6vw;
     justify-content: center;
+    align-items: center;
     letter-spacing: 1vw;
 }
 
-@media screen and (max-width: 600px) {
-    .big-name {
-	flex-direction: column;
-    }
-}
-
 .big-name-name {
-    font-size: 12vw;
+    font-size: 10vw;
 }
 
 .big-name-and {
-    font-size: 8vw;
+    font-size: 6vw;
     text-decoration: underline;
     text-underline-offset: 0.2em;
     text-decoration-thickness: 0.05em;
