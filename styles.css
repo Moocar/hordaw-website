@@ -48,9 +48,7 @@ a:hover {
     width: 100%;
     align-items: center;
     background: var(--strong-bg-color);
-    position: relative;
     overflow: hidden;
-    top: 0;
 }
 
 .sticky {
@@ -60,34 +58,43 @@ a:hover {
   z-index: 1;
 }
 
-.sticky + .content {
-  padding-top: 60px;
-}
-
 .navbar-title {
     font-size: 8vw;
     padding: 6px 0;
 }
 
 .navbar-menu {
+    position: fixed;
+    transform: translateY(0);
+    transition: transform 0.2s;
     display: flex;
-    list-style-type: none;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 6vw;
-    flex-wrap: wrap;
-    top: -20px;
-    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: var(--strong-bg-color);
+    color: var(--light-bg-color);
+    list-style-type: none;
+    gap: 1.5em;
+    padding-top: 4rem;
+}
+
+.hidden {
+    display: none;
 }
 
 .navbar-item {
-    font-size: 20px;
+    font-size: 2em;
 }
 
 .hamburger-menu {
     position: absolute;
     left: 6px;
-    top: 2px;
+    top: 4px;
+    z-index: 100;
 }
 
 .hamburger-line {
@@ -95,6 +102,12 @@ a:hover {
     height: 5px;
     background-color: var(--light-bg-color);
     margin: 6px 0;
+}
+
+.hamburger-menu-cross {
+    font-size: 2em;
+    color: var(--light-bg-color);
+    font-family: 'Arial';
 }
 
 /**************************************/

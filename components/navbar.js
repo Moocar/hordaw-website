@@ -5,56 +5,66 @@ function Navbar() {
   const navbarRef = useRef(null);
   const [offset, setOffset] = useState(0);
   const [isSticky, setIsSticky] = useState(0);
-  useEffect(() => {
-    console.log(offset);
-    setOffset(navbarRef.current.offsetTop);
-    console.log(offset);
+  const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    setOffset(navbarRef.current.offsetTop);
     const onScroll = () => {
-      console.log(offset, pageYOffset);
       setIsSticky(window.pageYOffset >= offset);
     };
     window.removeEventListener("scroll", onScroll);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const onClickHamburger = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div class={isSticky ? "navbar sticky" : "navbar"} ref={navbarRef}>
       <span class="navbar-title">
         <Link href="/">Georgina & Chris</Link>
       </span>
-      <HamburgerMenu />
-      <MenuPanel open={false}></MenuPanel>
+      <HamburgerMenu isOpen={isOpen} onClick={onClickHamburger} />
+      <Menu isOpen={isOpen} onClick={() => setIsOpen(false)}></Menu>
     </div>
   );
 }
 
-function Item({ title, href }) {
+function Item({ title, href, onClick }) {
   return (
-    <li class="navbar-item">
+    <li class="navbar-item" onClick={onClick}>
       <Link href={href}>{title}</Link>
     </li>
   );
 }
 
-function HamburgerMenu() {
+function HamburgerMenu({ isOpen, onClick }) {
   return (
-    <div class="hamburger-menu">
-      <div class="hamburger-line"></div>
-      <div class="hamburger-line"></div>
-      <div class="hamburger-line"></div>
+    <div class="hamburger-menu" onClick={onClick}>
+      {isOpen ? (
+        <div class="hamburger-menu-cross">X</div>
+      ) : (
+        <>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+          <div class="hamburger-line"></div>
+        </>
+      )}
     </div>
   );
 }
 
-function MenuPanel() {
-  <div>
-    <menu class="navbar-menu">
-      <Item title="Things To Know" href="/things-to-know" />
-      <Item title="Schedule" href="/schedule" />
-      <Item title="Contact" href="/contact" />
-    </menu>
-  </div>;
+function Menu({ isOpen, onClick }) {
+  return (
+    <div class={`navbar-menu ${isOpen ? "" : "hidden"}`}>
+      <Item title="Home" href="/" onClick={onClick} />
+      <Item title="Things To Know" href="/things-to-know" onClick={onClick} />
+      <Item title="Schedule" href="/schedule" onClick={onClick} />
+      <Item title="Contact" href="/contact" onClick={onClick} />
+    </div>
+  );
 }
 
 export default Navbar;
