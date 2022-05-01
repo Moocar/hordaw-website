@@ -2,15 +2,20 @@ import Image from "next/image";
 
 function HomePage() {
   return (
-    <div class="container">
-      <div class="hero-image">
-        <h1>The text</h1>
-        <p>The man</p>
+    <div>
+      <div class="hero-image"></div>
+      <div class="full-screen-centered">
+        <div class="big-name">
+          <span class="big-name-name">Georgina Elizabeth</span>
+          <span class="big-name-and">and</span>
+          <span class="big-name-name">Chris Dawson</span>
+        </div>
       </div>
-      <div class="big-name">
-        <span class="big-name-name">Georgina Elizabeth</span>
-        <span class="big-name-and">and</span>
-        <span class="big-name-name">Chris Dawson</span>
+      <div class="full-screen-centered strong-background">
+        <div class="big-date">
+          <div class="big-date-month">October 15</div>
+          <div class="big-date-year">2022</div>
+        </div>
       </div>
     </div>
   );

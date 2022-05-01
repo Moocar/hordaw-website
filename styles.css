@@ -1,7 +1,12 @@
+:root {
+    --light-bg-color: #c8cace; /* pinkish #f1edeb; */
+    --strong-bg-color: #174d66; /* dark pinking  #c2aaa8 */
+}
+
 body {
   font-family: 'Cormorant Garamond', 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
     'Arial', sans-serif;
-  background: #f1edeb;
+  background: var(--light-bg-color);
 }
 
 a {
@@ -13,27 +18,16 @@ a:hover {
     text-decoration: underline;
 }
 
-.navbar {
+.strong-background {
+    background: var(--strong-bg-color);
+    color: var(--light-bg-color);
+}
+
+.full-screen-centered {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    background: #c2aaa8;
-}
-
-.navbar-title {
-    font-size: 2em;
-}
-
-.navbar-menu {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    gap: 40px;
-}
-
-.navbar-item {
-    font-size: 20px;
 }
 
 .container {
@@ -45,8 +39,69 @@ a:hover {
     max-width: 100%;
 }
 
+/************************************/
+/* Navbar */
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background: var(--strong-bg-color);
+    position: relative;
+    overflow: hidden;
+    top: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.navbar-title {
+    font-size: 8vw;
+    padding: 6px 0;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 6vw;
+    flex-wrap: wrap;
+    top: -20px;
+    position: relative;
+}
+
+.navbar-item {
+    font-size: 20px;
+}
+
+.hamburger-menu {
+    position: absolute;
+    left: 6px;
+    top: 2px;
+}
+
+.hamburger-line {
+    width: 35px;
+    height: 5px;
+    background-color: var(--light-bg-color);
+    margin: 6px 0;
+}
+
+/**************************************/
+/* Home Page */
+
 .hero-image {
-    background-image: url("/boomrock-view.jpeg");
+    background-image: url("/boomrock-view-2.jpeg");
     height: 500px;
     width: 100%;
     background-position: center;
@@ -55,11 +110,20 @@ a:hover {
     position: relative;
 }
 
+/**************************************/
+/* Schedule */
+
 .event {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
+}
+
+.event .title {
+    font-size: 8vw;
+    letter-spacing: 1vw;
+    text-transform: uppercase;
 }
 
 .event-date-and-time {
@@ -70,7 +134,7 @@ a:hover {
 }
 
 .event-details {
-   display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -78,20 +142,45 @@ a:hover {
 }
 
 .big-name {
-    padding: 20px;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
     display: flex;
     align-items: center;
-    gap: 20px;
-    z-index: 1;
-    position: relative;
+    gap: 8vw;
+    justify-content: center;
+    letter-spacing: 1vw;
+}
+
+@media screen and (max-width: 600px) {
+    .big-name {
+	flex-direction: column;
+    }
 }
 
 .big-name-name {
-    font-size: 60px;
+    font-size: 12vw;
 }
 
 .big-name-and {
-    font-size: 40px;
+    font-size: 8vw;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-thickness: 0.05em;
+}
+
+.big-date {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.big-date-month {
+    font-size: 50px;
+}
+
+.big-date-year {
+    font-size: 30px;
     text-decoration: underline;
     text-underline-offset: 0.2em;
     text-decoration-thickness: 0.05em;

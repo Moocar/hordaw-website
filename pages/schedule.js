@@ -1,7 +1,6 @@
 function Schedule() {
   return (
     <div>
-      <h1>Schedule</h1>
       <Event
         title="Welcome Drinks"
         date="Thursday, January 2, 2020"
@@ -15,7 +14,7 @@ function Event({ title, date, time }) {
   return (
     <section class="event">
       <div class="event-date-and-time">
-        <h2>{title}</h2>
+        <p class="title">{title}</p>
         <h3>{date}</h3>
         <h3>{time}</h3>
       </div>
