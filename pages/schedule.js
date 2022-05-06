@@ -1,35 +1,98 @@
+import Image from "next/image";
+
 function Schedule() {
   return (
-    <div>
+    <Events>
       <Event
-        title="Welcome Drinks"
-        date="Thursday, January 2, 2020"
-        time="5:00 pm"
+        title="Boomrock day"
+        date="Friday, October 14, 2022"
+        time="10:00 am"
+        imageName="/placeholder-wedding-svgrepo-com.svg"
+        address={
+          <Address
+            content={[
+              "Boomrock",
+              "292 Boom Rock Rd",
+              "Ohariu Valley",
+              "Wellington",
+              "6037 New Zealand",
+            ]}
+          />
+        }
       />
-    </div>
+      <Event
+        title="Wedding"
+        date="Saturday, October 15, 2022"
+        time="5:00 pm"
+        dressCode="Formal Dress Code"
+        imageName="/wedding-ring-svgrepo-com.svg"
+        address={
+          <Address
+            content={[
+              "Boomrock",
+              "292 Boom Rock Rd",
+              "Ohariu Valley",
+              "Wellington",
+              "6037 New Zealand",
+            ]}
+          />
+        }
+      />
+      <Event
+        title="BBQ"
+        date="Sunday, October 16, 2022"
+        time="10:00 an"
+        imageName="/wedding-bells-svgrepo-com.svg"
+        address={
+          <Address
+            content={[
+              "Boomrock",
+              "292 Boom Rock Rd",
+              "Ohariu Valley",
+              "Wellington",
+              "6037 New Zealand",
+            ]}
+          />
+        }
+      />
+    </Events>
   );
 }
 
-function Event({ title, date, time }) {
+function Events(props) {
+  return <div>{props.children}</div>;
+}
+
+function Event({ title, date, time, address, dressCode, imageName }) {
   return (
     <section class="event">
-      <div class="event-date-and-time">
-        <p class="title">{title}</p>
-        <h3>{date}</h3>
-        <h3>{time}</h3>
+      <h2 class="title">{title}</h2>
+      <div class="event date-and-time">
+        <div>{date}</div>
+        <div>{time}</div>
       </div>
-      <div class="event-details">
-        <div>
-          <p>Caves House hotel Yallingup</p>
-          <p>18 Yallingup Beach Road</p>
-          <p>Yallingup, WA 6286</p>
-          <p>New Zealand</p>
-          <p>Casual Dress Code</p>
-        </div>
-        <button>Map</button>
-        <button>Add to Calendar</button>
-      </div>
+      <Image src={imageName} width="80" height="80" />
+      {address}
+      {dressCode ? <div class="dress-code">{dressCode}</div> : ""}
+      <a
+        href="https://g.page/boomrock?share"
+        class="btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Map
+      </a>
     </section>
+  );
+}
+
+function Address({ content }) {
+  return (
+    <div class="address">
+      {content.map((line) => (
+        <div>{line}</div>
+      ))}
+    </div>
   );
 }
 

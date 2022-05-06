@@ -40,7 +40,38 @@ a:hover {
 }
 
 .content {
-    padding-top: 24px;
+    padding-top: 26px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+}
+
+.btn {
+    text-transform: uppercase;
+    vertical-align: middle;
+    border: 1px solid var(--strong-bg-color);
+    width: 70%;
+    color: var(--strong-bg-color);
+    border-radius: 0;
+    padding: 8px 12px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.btn a:visited {
+    text-decoration: none;
+}
+
+.btn a:active {
+    text-decoration: none;
+}
+
+.btn a:link {
+    text-decoration: none;
+}
+
+hl {
+    padding: 20px;
 }
 
 /************************************/
@@ -136,7 +167,15 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 1em;
     width: 100%;
+}
+
+section.event {
+    border-bottom: solid 1px var(--strong-bg-color);
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
 .event .title {
@@ -145,11 +184,14 @@ a:hover {
     text-transform: uppercase;
 }
 
-.event-date-and-time {
+.event .date-and-time {
     display: flex;
+    letter-spacing: 1vw;
+    text-transform: uppercase;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1em
 }
 
 .event-details {
@@ -159,6 +201,20 @@ a:hover {
     align-items: center;
     align-content: center
 }
+
+.address {
+    text-align: center;
+    line-height: 1.3;
+    font-size: 1.2em;
+}
+
+.dress-code {
+    line-height: 1.3;
+    font-size: 1.2em;
+}
+
+/***********************************/
+/* Big Name */
 
 .big-name {
     padding-top: 8vw;
