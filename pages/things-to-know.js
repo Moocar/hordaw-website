@@ -1,6 +1,11 @@
+import Head from "next/head";
+
 function Page() {
   return (
     <div>
+      <Head>
+        <title>Things to Know | Georgina & Chris</title>
+      </Head>
       <h1>Things to know</h1>
       <section>
         <h2>COVID</h2>

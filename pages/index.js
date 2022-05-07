@@ -1,6 +1,11 @@
+import Head from "next/head";
+
 function HomePage() {
   return (
     <div>
+      <Head>
+        <title>Georgina & Chris</title>
+      </Head>
       <div class="hero-image"></div>
       <div class="full-screen-centered">
         <div class="big-name">

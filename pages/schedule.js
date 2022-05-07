@@ -1,8 +1,12 @@
 import Image from "next/image";
+import Head from "next/head";
 
 function Schedule() {
   return (
     <Events>
+      <Head>
+        <title>Schedule | Georgina & Chris</title>
+      </Head>
       <Event
         title="Boomrock day"
         date="Friday, October 14, 2022"
