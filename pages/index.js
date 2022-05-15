@@ -2,7 +2,7 @@ import Head from "next/head";
 
 function HomePage() {
   return (
-    <div>
+    <div class="body-content">
       <Head>
         <title>Georgina & Chris</title>
       </Head>

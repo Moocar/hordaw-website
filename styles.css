@@ -36,11 +36,22 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin: auto;
+    width: 50%;
     max-width: 100%;
 }
 
 .content {
     padding-top: 46px;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%
+}
+
+@media (min-width: 768px) {
+    .content {
+	padding-top: 100px;
+    }
 }
 
 .btn {
@@ -148,6 +159,30 @@ hl {
     padding-top: 2px;
 }
 
+@media (min-width: 768px) {
+    .navbar {
+	height: 100px;
+    }
+
+    .hamburger-menu {
+	display: none;
+    }
+
+    .closed-menu {
+	transform: translateY(0);
+    }
+
+    .navbar-menu {
+	position: relative;
+	flex-direction: row;
+	padding-top: 1em;
+    }
+
+    .navbar-item {
+	font-size: 1.5rem;
+    }
+}
+
 /**************************************/
 /* Home Page */
 
@@ -159,6 +194,12 @@ hl {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+@media (min-width: 768px) {
+    .hero-image {
+	height: 440px;
+    }
 }
 
 /**************************************/
@@ -262,5 +303,16 @@ section.event {
 /* Things to Know */
 
 .padded-content {
-    padding: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: flex;
+    flex-direction: column;
+    max-width: 660px;
+    align-items: center;
+}
+
+.body-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 100%
 }
