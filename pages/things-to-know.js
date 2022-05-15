@@ -2,7 +2,7 @@ import Head from "next/head";
 
 function Page() {
   return (
-    <div>
+    <div class="padded-content">
       <Head>
         <title>Things to Know | Georgina & Chris</title>
       </Head>
