@@ -8,18 +8,14 @@ function Schedule() {
         <title>Schedule | Georgina & Chris</title>
       </Head>
       <Event
-        title="Boomrock day"
+        title="Pre-Wedding gathering"
         date="Friday, October 14, 2022"
-        time="10:00 am"
+        time="5:00pm onwards"
         imageName="/placeholder-wedding-svgrepo-com.svg"
         address={
           <Address
             content={[
-              "Boomrock",
-              "292 Boom Rock Rd",
-              "Ohariu Valley",
-              "Wellington",
-              "6037 New Zealand",
+             "Location TBC"
             ]}
           />
         }
@@ -27,8 +23,8 @@ function Schedule() {
       <Event
         title="Wedding"
         date="Saturday, October 15, 2022"
-        time="5:00 pm"
-        dressCode="Formal Dress Code"
+        time="3:00 pm"
+        dressCode="Lounge suit"
         imageName="/wedding-ring-svgrepo-com.svg"
         address={
           <Address
@@ -43,18 +39,14 @@ function Schedule() {
         }
       />
       <Event
-        title="BBQ"
+        title="Post wedding brunch"
         date="Sunday, October 16, 2022"
-        time="10:00 an"
+        time="11:00 am onwards"
         imageName="/wedding-bells-svgrepo-com.svg"
         address={
           <Address
             content={[
-              "Boomrock",
-              "292 Boom Rock Rd",
-              "Ohariu Valley",
-              "Wellington",
-              "6037 New Zealand",
+              "TBC",
             ]}
           />
         }
