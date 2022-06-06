@@ -33,17 +33,10 @@ At the end of the evening, buses will be leaving Boomrock to return guests to We
       <section>
         <h2>Childcare</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-          euismod libero elit, at condimentum justo aliquet nec. Maecenas vel
-          orci eu tortor blandit placerat vehicula at elit. Morbi aliquet leo at
-          viverra luctus. Quisque vitae lectus vestibulum, venenatis orci quis,
-          pretium felis. Nam ultricies suscipit ligula. In convallis efficitur
-          consectetur. Pellentesque habitant morbi tristique senectus et netus
-          et malesuada fames ac turpis egestas. Duis enim lorem, imperdiet a
-          egestas eget, molestie vitae elit. Morbi nunc quam, sagittis sit amet
-          tempor a, varius ac mauris. Integer hendrerit ipsum vel tincidunt
-          tempus.
-        </p>
+    Please contact us to discuss your needs
+
+       </p>
+
       </section>
       <section>
         <h2>Things to Do</h2>
