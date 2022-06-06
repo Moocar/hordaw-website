@@ -1,6 +1,4 @@
 .DS_Store
-.babelrc
 .next/
 .pnpm-debug.log
 node_modules/
-pnpm-lock.yaml
