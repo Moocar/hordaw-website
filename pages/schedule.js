@@ -12,13 +12,7 @@ function Schedule() {
         date="Friday, October 14, 2022"
         time="5:00pm onwards"
         imageName="/placeholder-wedding-svgrepo-com.svg"
-        address={
-          <Address
-            content={[
-             "Location TBC"
-            ]}
-          />
-        }
+        address={<Address content={["Location TBC"]} />}
       />
       <Event
         title="Wedding"
@@ -43,13 +37,7 @@ function Schedule() {
         date="Sunday, October 16, 2022"
         time="11:00 am onwards"
         imageName="/wedding-bells-svgrepo-com.svg"
-        address={
-          <Address
-            content={[
-              "TBC",
-            ]}
-          />
-        }
+        address={<Address content={["TBC"]} />}
       />
     </Events>
   );

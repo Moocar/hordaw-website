@@ -8,11 +8,13 @@ function Page() {
       </Head>
       <h1>RSVP</h1>
       <section>
-        <div>Please click on <a href="https://gumtree.rsvp.com.au/"> this link </a> to RSVP by the 30th September </div>
+        <div>
+          Please click on <a href="https://gumtree.rsvp.com.au/"> this link </a>{" "}
+          to RSVP by the 30th September{" "}
+        </div>
       </section>
     </div>
   );
 }
 
 export default Page;
-
