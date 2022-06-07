@@ -177,7 +177,7 @@ hl {
     .navbar-menu {
 	position: relative;
 	flex-direction: row;
-	padding-top: 1em;
+	padding-top: 0.5em;
     }
 
     .navbar-item {
