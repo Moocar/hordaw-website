@@ -31,6 +31,7 @@ function Schedule() {
             ]}
           />
         }
+        mapHref="https://g.page/boomrock?share"
       />
       <Event
         title="Post wedding brunch"
@@ -47,9 +48,9 @@ function Events(props) {
   return <div>{props.children}</div>;
 }
 
-function Event({ title, date, time, address, dressCode, imageName }) {
+function Event({ title, date, time, address, dressCode, imageName, mapHref }) {
   return (
-    <section class="event">
+    <section class="event" key={title}>
       <h2 class="title">{title}</h2>
       <div class="event date-and-time">
         <div>{date}</div>
@@ -58,14 +59,13 @@ function Event({ title, date, time, address, dressCode, imageName }) {
       <Image src={imageName} width="80" height="80" />
       {address}
       {dressCode ? <div class="dress-code">{dressCode}</div> : ""}
-      <a
-        href="https://g.page/boomrock?share"
-        class="btn"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Map
-      </a>
+      {mapHref ? (
+        <a href={mapHref} class="btn" target="_blank" rel="noopener noreferrer">
+          Map
+        </a>
+      ) : (
+        ""
+      )}
     </section>
   );
 }
