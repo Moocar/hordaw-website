@@ -8,7 +8,7 @@ function Page() {
       </Head>
       <h1>Contact</h1>
       <section>
-        <h2>Georgina Elizabeth</h2>
+        <h2>Georgina Horsburgh</h2>
         <div>NZ number (+64 (0) 21 028 10238)</div><br></br>  
         <div>georgina.horsburgh@gmail.com</div>
       </section>
