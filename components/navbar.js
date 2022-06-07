@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 function Navbar() {
   const navbarRef = useRef(null);
   const [offset, setOffset] = useState(0);
-  const [isSticky, setIsSticky] = useState(0);
+  const [isSticky, setIsSticky] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {

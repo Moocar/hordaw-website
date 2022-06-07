@@ -65,6 +65,7 @@ a:hover {
     padding: 8px 12px;
     letter-spacing: 0.1rem;
     text-align: center;
+    margin: 20px;
 }
 
 .btn a:visited {
@@ -125,7 +126,6 @@ hl {
     background: var(--strong-bg-color);
     color: var(--light-bg-color);
     list-style-type: none;
-    gap: 1.5em;
     padding-top: 4em;
 }
 
@@ -134,6 +134,7 @@ hl {
 }
 
 .navbar-item {
+    padding: 0.5em;
     font-size: 2rem;
 }
 
@@ -157,6 +158,7 @@ hl {
     font-family: 'Arial';
     padding-left: 8px;
     padding-top: 2px;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -210,20 +212,20 @@ hl {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 1em;
     width: 100%;
 }
 
 section.event {
     border-bottom: solid 1px var(--strong-bg-color);
-    padding-bottom: 2em;
-    padding-top: 2em;
+    padding: 2em 0;
 }
 
 .event .title {
     font-size: 2rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    text-align: center;
+    line-height: 1.4;
 }
 
 .event .date-and-time {
@@ -233,7 +235,7 @@ section.event {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em
+    padding: 1em 0;
 }
 
 .event-details {
@@ -264,14 +266,16 @@ section.event {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3em;
+    text-align: center;
     justify-content: center;
     align-items: center;
     letter-spacing: 0.2em;
 }
 
 .big-name-name {
+    padding-top: 1em;
     font-size: 2.5rem;
+    padding-bottom: 1em;
 }
 
 .big-name-and {
@@ -285,7 +289,6 @@ section.event {
     padding: 40px;
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 
 .big-date-month {
@@ -293,6 +296,7 @@ section.event {
 }
 
 .big-date-year {
+    padding: 20px;
     font-size: 1.8rem;
     text-decoration: underline;
     text-underline-offset: 0.2em;
@@ -312,7 +316,7 @@ section.event {
 }
 
 .body-content {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    /* padding-left: 0.5em; */
+    /* padding-right: 0.5em; */
     width: 100%
 }
