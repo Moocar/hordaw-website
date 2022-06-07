@@ -9,9 +9,9 @@ function HomePage() {
       <div class="hero-image"></div>
       <div class="full-screen-centered">
         <div class="big-name">
-          <span class="big-name-name">Georgina Elizabeth</span>
+          <span class="big-name-name">Georgina Elizabeth Horsburgh</span>
           <span class="big-name-and">AND</span>
-          <span class="big-name-name">Chris Dawson</span>
+          <span class="big-name-name">Christopher John Dawson</span>
         </div>
       </div>
       <div class="full-screen-centered strong-background">
