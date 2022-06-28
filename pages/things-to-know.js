@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Head from "next/head";
-import Photo from "../public/IMG_5992.jpg";
+import Photo from "./couple-photo1.jpg";
 
 function Page() {
   return (
-    <div class="padded-content">
+    <div className="padded-content">
       <Head>
         <title>Things to Know | Georgina & Chris</title>
       </Head>

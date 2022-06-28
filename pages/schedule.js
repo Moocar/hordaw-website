@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
-import Photo from "../public/IMG_1266.jpg";
+import Photo from "./couple-photo2.jpg";
 
 function Schedule() {
   return (
