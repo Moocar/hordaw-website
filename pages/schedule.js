@@ -50,17 +50,22 @@ function Events(props) {
 
 function Event({ title, date, time, address, dressCode, imageName, mapHref }) {
   return (
-    <section class="event" key={title}>
-      <h2 class="title">{title}</h2>
-      <div class="event date-and-time">
+    <section className="event" key={title}>
+      <h2 className="title">{title}</h2>
+      <div className="event date-and-time">
         <div>{date}</div>
         <div>{time}</div>
       </div>
       <Image src={imageName} width="80" height="80" />
       {address}
-      {dressCode ? <div class="dress-code">{dressCode}</div> : ""}
+      {dressCode ? <div className="dress-code">{dressCode}</div> : ""}
       {mapHref ? (
-        <a href={mapHref} class="btn" target="_blank" rel="noopener noreferrer">
+        <a
+          href={mapHref}
+          className="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Map
         </a>
       ) : (
@@ -72,9 +77,9 @@ function Event({ title, date, time, address, dressCode, imageName, mapHref }) {
 
 function Address({ content }) {
   return (
-    <div class="address">
+    <div className="address">
       {content.map((line) => (
-        <div>{line}</div>
+        <div key={line}>{line}</div>
       ))}
     </div>
   );

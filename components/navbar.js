@@ -22,8 +22,8 @@ function Navbar() {
   };
 
   return (
-    <div class={isSticky ? "navbar sticky" : "navbar"} ref={navbarRef}>
-      <span class="navbar-title">
+    <div className={isSticky ? "navbar sticky" : "navbar"} ref={navbarRef}>
+      <span className="navbar-title">
         <Link href="/">Georgina & Chris</Link>
       </span>
       <HamburgerMenu isOpen={isOpen} onClick={onClickHamburger} />
@@ -34,7 +34,7 @@ function Navbar() {
 
 function Item({ title, href, onClick }) {
   return (
-    <li class="navbar-item" onClick={onClick}>
+    <li className="navbar-item" onClick={onClick}>
       <Link href={href}>{title}</Link>
     </li>
   );
@@ -42,14 +42,14 @@ function Item({ title, href, onClick }) {
 
 function HamburgerMenu({ isOpen, onClick }) {
   return (
-    <div class="hamburger-menu" onClick={onClick}>
+    <div className="hamburger-menu" onClick={onClick}>
       {isOpen ? (
-        <div class="hamburger-menu-cross">X</div>
+        <div className="hamburger-menu-cross">X</div>
       ) : (
         <>
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
+          <div className="hamburger-line"></div>
+          <div className="hamburger-line"></div>
+          <div className="hamburger-line"></div>
         </>
       )}
     </div>
@@ -58,7 +58,7 @@ function HamburgerMenu({ isOpen, onClick }) {
 
 function Menu({ isOpen, onClick }) {
   return (
-    <div class={`navbar-menu ${isOpen ? "" : "closed-menu"}`}>
+    <div className={`navbar-menu ${isOpen ? "" : "closed-menu"}`}>
       <Item title="Home" href="/" onClick={onClick} />
       <Item title="Schedule" href="/schedule" onClick={onClick} />
       <Item title="Things To Know" href="/things-to-know" onClick={onClick} />
