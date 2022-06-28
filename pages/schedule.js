@@ -1,46 +1,50 @@
 import Image from "next/image";
 import Head from "next/head";
+import Photo from "../public/IMG_1266.jpg";
 
 function Schedule() {
   return (
-    <Events>
-      <Head>
-        <title>Schedule | Georgina & Chris</title>
-      </Head>
-      <Event
-        title="Pre-Wedding gathering"
-        date="Friday, October 14, 2022"
-        time="5:00pm onwards"
-        imageName="/placeholder-wedding-svgrepo-com.svg"
-        address={<Address content={["Location TBC"]} />}
-      />
-      <Event
-        title="Wedding"
-        date="Saturday, October 15, 2022"
-        time="3:00 pm"
-        dressCode="Lounge suit"
-        imageName="/wedding-ring-svgrepo-com.svg"
-        address={
-          <Address
-            content={[
-              "Boomrock",
-              "292 Boom Rock Rd",
-              "Ohariu Valley",
-              "Wellington",
-              "6037 New Zealand",
-            ]}
-          />
-        }
-        mapHref="https://g.page/boomrock?share"
-      />
-      <Event
-        title="Post wedding brunch"
-        date="Sunday, October 16, 2022"
-        time="11:00 am onwards"
-        imageName="/wedding-bells-svgrepo-com.svg"
-        address={<Address content={["TBC"]} />}
-      />
-    </Events>
+    <div>
+      <Image src={Photo} width="732" height="549" placeholder="blur" />
+      <Events>
+        <Head>
+          <title>Schedule | Georgina & Chris</title>
+        </Head>
+        <Event
+          title="Pre-Wedding gathering"
+          date="Friday, October 14, 2022"
+          time="5:00pm onwards"
+          imageName="/placeholder-wedding-svgrepo-com.svg"
+          address={<Address content={["Location TBC"]} />}
+        />
+        <Event
+          title="Wedding"
+          date="Saturday, October 15, 2022"
+          time="3:00 pm"
+          dressCode="Lounge suit"
+          imageName="/wedding-ring-svgrepo-com.svg"
+          address={
+            <Address
+              content={[
+                "Boomrock",
+                "292 Boom Rock Rd",
+                "Ohariu Valley",
+                "Wellington",
+                "6037 New Zealand",
+              ]}
+            />
+          }
+          mapHref="https://g.page/boomrock?share"
+        />
+        <Event
+          title="Post wedding brunch"
+          date="Sunday, October 16, 2022"
+          time="11:00 am onwards"
+          imageName="/wedding-bells-svgrepo-com.svg"
+          address={<Address content={["TBC"]} />}
+        />
+      </Events>
+    </div>
   );
 }
 

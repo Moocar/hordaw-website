@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Head from "next/head";
+import Photo from "../public/IMG_5992.jpg";
 
 function Page() {
   return (
@@ -6,14 +8,15 @@ function Page() {
       <Head>
         <title>Things to Know | Georgina & Chris</title>
       </Head>
+      <Image src={Photo} width="732" height="549" placeholder="blur" />
       <h1>Things to know</h1>
       <section>
         <h2>Accommodation Options</h2>
         <p>
-          There is no accommodation at Boomrock itself. 
-          We recommend finding accommodation in central Wellington
-          (try Airbnb, Booking.com) or Johnsonville. We don’t have any
-          particular recommendations for places to stay but{" "}
+          There is no accommodation at Boomrock itself. We recommend finding
+          accommodation in central Wellington (try Airbnb, Booking.com) or
+          Johnsonville. We don’t have any particular recommendations for places
+          to stay but{" "}
           <a href="https://www.myguidewellington.com/regionalinfo/wellington-suburb">
             this guide
           </a>{" "}
@@ -61,7 +64,8 @@ function Page() {
           Central Railway Station at approximately 60mins prior to the ceremony;
           and Johnsonville Railway Station at approximately 45mins prior to the
           ceremony (exact times TBA). <br></br> At the end of the night, buses
-          will be leaving Boomrock to take guests back to Wellington at two different times. 
+          will be leaving Boomrock to take guests back to Wellington at two
+          different times.
         </p>
       </section>
       <section>
@@ -69,20 +73,16 @@ function Page() {
 
         <h3>What if I have children? Can they come to the wedding?</h3>
         <p>
-          We would be delighted to have your children at the  
-          ceremony.
-          Unfortunately we cannot accommodate them at the reception. 
+          We would be delighted to have your children at the ceremony.
+          Unfortunately we cannot accommodate them at the reception.
         </p>
         <h3>Are there childcare options available?</h3>
         <p>
-          We will arrange babysitting for your children. 
-          This will be available for the whole event, or if you would like
-          to bring your children to the ceremony we will arange transport back to the babysitting location.
-          See the RSVP form, and if you have any concerns 
-          please get in touch with us.
-
-
-
+          We will arrange babysitting for your children. This will be available
+          for the whole event, or if you would like to bring your children to
+          the ceremony we will arange transport back to the babysitting
+          location. See the RSVP form, and if you have any concerns please get
+          in touch with us.
         </p>
       </section>
       <section>
@@ -90,8 +90,9 @@ function Page() {
         <p>
           We do not expect gifts - your efforts to join us on our big day are
           more than enough and greatly appreciated! However, if you would like
-          the option, you could make a contribution to our wishing well at the reception. We'd
-          like to put this towards a piece of art or an adventure in NZ.
+          the option, you could make a contribution to our wishing well at the
+          reception. We'd like to put this towards a piece of art or an
+          adventure in NZ.
         </p>
       </section>
     </div>
