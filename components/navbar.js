@@ -63,6 +63,7 @@ function Menu({ isOpen, onClick }) {
       <Item title="Schedule" href="/schedule" onClick={onClick} />
       <Item title="Things To Know" href="/things-to-know" onClick={onClick} />
       <Item title="Contact" href="/contact" onClick={onClick} />
+      <Item title="RSVP" href="/rsvp" onClick={onClick} />
     </div>
   );
 }
