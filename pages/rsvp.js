@@ -9,7 +9,9 @@ function Page() {
       <h1>RSVP</h1>
       <section>
         <div>
-          Please click on <a href="https://gumtree.rsvp.com.au/"> this link </a>{" "}
+          Thanks for letting us know if you can join us!
+          <br></br>
+          Please click on <a href="https://forms.gle/djkWeDfRQFZLxMF77"> this link </a>{" "}
           to RSVP by the 30th September{" "}
         </div>
       </section>

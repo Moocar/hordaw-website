@@ -16,7 +16,7 @@ function HomePage() {
       </div>
       <div class="full-screen-centered strong-background">
         <div class="big-date">
-          <div class="big-date-month">October 15</div>
+          <div class="big-date-month">Saturday, October 15</div>
           <div class="big-date-year">2022</div>
         </div>
       </div>

@@ -1,46 +1,50 @@
 import Image from "next/image";
 import Head from "next/head";
+import Photo from "./couple-photo2.jpg";
 
 function Schedule() {
   return (
-    <Events>
-      <Head>
-        <title>Schedule | Georgina & Chris</title>
-      </Head>
-      <Event
-        title="Pre-Wedding gathering"
-        date="Friday, October 14, 2022"
-        time="5:00pm onwards"
-        imageName="/placeholder-wedding-svgrepo-com.svg"
-        address={<Address content={["Location TBC"]} />}
-      />
-      <Event
-        title="Wedding"
-        date="Saturday, October 15, 2022"
-        time="3:00 pm"
-        dressCode="Lounge suit"
-        imageName="/wedding-ring-svgrepo-com.svg"
-        address={
-          <Address
-            content={[
-              "Boomrock",
-              "292 Boom Rock Rd",
-              "Ohariu Valley",
-              "Wellington",
-              "6037 New Zealand",
-            ]}
-          />
-        }
-        mapHref="https://g.page/boomrock?share"
-      />
-      <Event
-        title="Post wedding brunch"
-        date="Sunday, October 16, 2022"
-        time="11:00 am onwards"
-        imageName="/wedding-bells-svgrepo-com.svg"
-        address={<Address content={["TBC"]} />}
-      />
-    </Events>
+    <div>
+      <Image src={Photo} width="732" height="549" placeholder="blur" />
+      <Events>
+        <Head>
+          <title>Schedule | Georgina & Chris</title>
+        </Head>
+        <Event
+          title="Pre-Wedding gathering"
+          date="Friday, October 14, 2022"
+          time="5:00pm onwards"
+          imageName="/placeholder-wedding-svgrepo-com.svg"
+          address={<Address content={["Location TBC"]} />}
+        />
+        <Event
+          title="Wedding"
+          date="Saturday, October 15, 2022"
+          time="3:00 pm"
+          dressCode="Lounge suit"
+          imageName="/wedding-ring-svgrepo-com.svg"
+          address={
+            <Address
+              content={[
+                "Boomrock",
+                "292 Boom Rock Rd",
+                "Ohariu Valley",
+                "Wellington",
+                "6037 New Zealand",
+              ]}
+            />
+          }
+          mapHref="https://g.page/boomrock?share"
+        />
+        <Event
+          title="Post wedding brunch"
+          date="Sunday, October 16, 2022"
+          time="11:00 am onwards"
+          imageName="/wedding-bells-svgrepo-com.svg"
+          address={<Address content={["TBC"]} />}
+        />
+      </Events>
+    </div>
   );
 }
 
@@ -50,17 +54,22 @@ function Events(props) {
 
 function Event({ title, date, time, address, dressCode, imageName, mapHref }) {
   return (
-    <section class="event" key={title}>
-      <h2 class="title">{title}</h2>
-      <div class="event date-and-time">
+    <section className="event" key={title}>
+      <h2 className="title">{title}</h2>
+      <div className="event date-and-time">
         <div>{date}</div>
         <div>{time}</div>
       </div>
       <Image src={imageName} width="80" height="80" />
       {address}
-      {dressCode ? <div class="dress-code">{dressCode}</div> : ""}
+      {dressCode ? <div className="dress-code">{dressCode}</div> : ""}
       {mapHref ? (
-        <a href={mapHref} class="btn" target="_blank" rel="noopener noreferrer">
+        <a
+          href={mapHref}
+          className="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Map
         </a>
       ) : (
@@ -72,9 +81,9 @@ function Event({ title, date, time, address, dressCode, imageName, mapHref }) {
 
 function Address({ content }) {
   return (
-    <div class="address">
+    <div className="address">
       {content.map((line) => (
-        <div>{line}</div>
+        <div key={line}>{line}</div>
       ))}
     </div>
   );
