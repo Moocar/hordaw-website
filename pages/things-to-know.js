@@ -37,16 +37,14 @@ function Page() {
             <li>
               Public transport - you’ll need to get a snapper card to ride on
               buses, these can be purchased and topped up at a variety of
-              locations: https://www.snapper.co.nz/locations/
-            </li>
+              locations:  <a href=" https://www.snapper.co.nz/locations/">Snapper card</a>            </li>
             <li>
-              Ebike hire - switched on bikes are located on the waterfront and
+              Ebike hire - Switched on Bikes are located on the waterfront and
               offer ebike hire for short or long term:
-              https://switchedonbikes.co.nz/
-            </li>
+              <a href="https://switchedonbikes.co.nz/">Switched on Bikes</a>            </li>
             <li>
-              Car share - https://mevo.co.nz/wellington/ and
-              https://www.cityhop.co.nz/ Follow the instructions on their
+              Car share - <a href = "https://mevo.co.nz/wellington">Mevo</a> and
+              <a href="https://www.cityhop.co.nz/ ">City Hop</a>. Follow the instructions on their
               website to join online. You can even join with an Australian
               driver’s license and could save you needing to hire a car.{" "}
             </li>
@@ -74,15 +72,11 @@ function Page() {
         <h3>What if I have children? Can they come to the wedding?</h3>
         <p>
           We would be delighted to have your children at the ceremony.
-          Unfortunately we cannot accommodate them at the reception.
+          Unfortunately we cannot accommodate them at the reception. If you do wish to bring your children to the ceremony please let us know as we will need to arrange transport for them back to a location of your choosing. 
         </p>
         <h3>Are there childcare options available?</h3>
         <p>
-          We will arrange babysitting for your children. This will be available
-          for the whole event, or if you would like to bring your children to
-          the ceremony we will arange transport back to the babysitting
-          location. See the RSVP form, and if you have any concerns please get
-          in touch with us.
+        We have had <a href="https://www.jugglestreet.co.nz/">Juggle Street</a> and <a href="https://karitanenannies.co.nz/families/babysitting-services/">Karitane</a> recommended to us. If you are having difficulties arranging childcare through these agencies please let us know and we may be able to help you find alternative arrangements.
         </p>
       </section>
       <section>
