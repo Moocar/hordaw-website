@@ -14,7 +14,8 @@ function Schedule() {
           title="Pre-Wedding gathering"
           date="Friday, October 14, 2022"
           time="7:30pm onwards"
-          dressCode="Dinner and drinks will be provided"
+          dressCode="Dresscode: Smart causal. 
+          Dinner and drinks will be provided"
           imageName="/placeholder-wedding-svgrepo-com.svg"
           address={<Address 
             content={[
@@ -28,7 +29,7 @@ function Schedule() {
           title="Wedding"
           date="Saturday, October 15, 2022"
           time="3:00 pm"
-          dressCode="Lounge suit"
+          dressCode="Dress code: Lounge suit"
           imageName="/wedding-ring-svgrepo-com.svg"
           address={
             <Address
