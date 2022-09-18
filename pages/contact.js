@@ -12,15 +12,11 @@ function Page() {
       <h1>Contact</h1>
       <section>
         <h2>Georgina Horsburgh</h2>
-        <div>NZ number (+64 (0) 21 028 10238)</div>
-        <br></br>
-        <div>georgina.horsburgh@gmail.com</div>
+        <div>georgina.horsburgh at gmail.com</div>
       </section>
       <section>
         <h2>Chris Dawson</h2>
-        <div>NZ number (+64 (0) 21 028 16309)</div>
-        <br></br>
-        <div>chrisdawson1@gmail.com</div>
+        <div>chrisdawson1 at gmail.com</div>
       </section>
     </div>
   );

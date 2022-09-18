@@ -13,15 +13,23 @@ function Schedule() {
         <Event
           title="Pre-Wedding gathering"
           date="Friday, October 14, 2022"
-          time="5:00pm onwards"
+          time="7:30pm onwards"
+          dressCode="Dresscode: Smart causal. 
+          Dinner and drinks will be provided"
           imageName="/placeholder-wedding-svgrepo-com.svg"
-          address={<Address content={["Location TBC"]} />}
+          address={<Address 
+            content={[
+            "Dockside Restaurant and Bar",
+            "3 Queens Wharf",
+            "Wellington Central",
+            ]} />}
+          mapHref="https://goo.gl/maps/v7BMgBEb76v9i4VH9"
         />
         <Event
           title="Wedding"
           date="Saturday, October 15, 2022"
           time="3:00 pm"
-          dressCode="Lounge suit"
+          dressCode="Dress code: Lounge suit"
           imageName="/wedding-ring-svgrepo-com.svg"
           address={
             <Address
@@ -39,9 +47,16 @@ function Schedule() {
         <Event
           title="Post wedding brunch"
           date="Sunday, October 16, 2022"
-          time="11:00 am onwards"
+          time="10:00 am onwards"
           imageName="/wedding-bells-svgrepo-com.svg"
-          address={<Address content={["TBC"]} />}
+          address={<Address 
+            content={[
+            "Coene's Bar & Eatery",
+            "103 Oriental Parade",
+            "Oriental Bay",
+            "Wellington", 
+            ]} />}
+          mapHref="https://goo.gl/maps/caGpmNqCZ1askeLi8"  
         />
       </Events>
     </div>
