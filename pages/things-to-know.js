@@ -31,7 +31,7 @@ function Page() {
           you hiring a car, they will even let you sign up with an overseas
           drivers license.
         </p>
-        <p>
+        <div>
           <h3>Links:</h3>
           <ul>
             <li>
@@ -43,12 +43,19 @@ function Page() {
               offer ebike hire for short or long term:
               <a href="https://switchedonbikes.co.nz/">Switched on Bikes</a>            </li>
             <li>
-              Car share - <a href = "https://mevo.co.nz/wellington">Mevo</a> and
-              <a href="https://www.cityhop.co.nz/ ">City Hop</a>. Follow the instructions on their
+              Car share - <a href = "https://mevo.co.nz/wellington">Mevo</a> and  
+               <a href="https://www.cityhop.co.nz/ "> City Hop</a>. Follow the instructions on their
               website to join online. You can even join with an Australian
               driver’s license and could save you needing to hire a car.{" "}
             </li>
           </ul>
+        </div>
+      </section>
+        <section>
+        <h2>Weather</h2>
+        <p>
+        Wellington can be a cold, windy place! Please make sure you bring your warm layers. As much as possible we'll be doing wedding activies outdoors, although we do have weather contingency plans in place. 
+        Check the <a href ="https://www.metservice.com/rural/regions/wellington/locations/ohariu-valley/7-days">Metservice website</a> for the upcoming weather. 
         </p>
       </section>
       <section>
@@ -59,11 +66,11 @@ function Page() {
           and take them to the wedding venue. We kindly ask all guests to use
           the shuttle option, as there is very limited parking at the venue and
           roads are tricky. These locations and pick up times are: Wellington
-          Central Railway Station at approximately 60mins prior to the ceremony;
-          and Johnsonville Railway Station at approximately 45mins prior to the
-          ceremony (exact times TBA). <br></br> At the end of the night, buses
-          will be leaving Boomrock to take guests back to Wellington at two
-          different times.
+          Central Railway Station at 1:45pm; and  Johnsonville Railway Station at 1:55pm. 
+          Please be on time to avoid any delays to the ceremony going ahead. 
+          <br></br> 
+          At the end of the night, buses
+          will be leaving Boomrock to take guests back to these same locations, leaving at approximately 9:30pm and midnight.
         </p>
       </section>
       <section>
@@ -89,6 +96,7 @@ function Page() {
           adventure in NZ.
         </p>
       </section>
+    
     </div>
   );
 }
