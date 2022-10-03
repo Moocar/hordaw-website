@@ -112,7 +112,7 @@ hl {
 
 .navbar-title a {
   text-decoration: none;
-  color: black;
+  color: var(--light-bg-color);
 }
 
 .navbar-menu {
@@ -135,7 +135,7 @@ hl {
 
 .navbar-menu a {
   text-decoration: none;
-  color: black;
+  color: var(--light-bg-color);
 }
 
 a.btn {
