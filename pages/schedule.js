@@ -19,9 +19,11 @@ function Schedule() {
           imageName="/placeholder-wedding-svgrepo-com.svg"
           address={<Address 
             content={[
+            "Upstairs dining area",
             "Dockside Restaurant and Bar",
             "3 Queens Wharf",
             "Wellington Central",
+            "Wellington 6011",
             ]} />}
           mapHref="https://goo.gl/maps/v7BMgBEb76v9i4VH9"
         />
@@ -37,8 +39,8 @@ function Schedule() {
                 "Boomrock",
                 "292 Boom Rock Rd",
                 "Ohariu Valley",
-                "Wellington",
-                "6037 New Zealand",
+                "Wellington 6037",
+                "New Zealand",
               ]}
             />
           }
@@ -51,12 +53,13 @@ function Schedule() {
           imageName="/wedding-bells-svgrepo-com.svg"
           address={<Address 
             content={[
-            "Coene's Bar & Eatery",
-            "103 Oriental Parade",
-            "Oriental Bay",
-            "Wellington", 
+            "Picnic Cafe",
+            "Wellington Botanical Gardens",
+            "Thorndon",
+            "Wellington 6012",
+            <a href="https://wellingtongardens.nz/assets/Documents/wellington-botanic-garden-map.pdf">How to get there</a> 
             ]} />}
-          mapHref="https://goo.gl/maps/caGpmNqCZ1askeLi8"  
+          mapHref="https://goo.gl/maps/hBoWcsuKJuiJMw8e8"  
         />
       </Events>
     </div>
