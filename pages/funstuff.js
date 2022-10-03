@@ -10,7 +10,10 @@ function Page() {
       <section>
         <div>
           Please join the wedding fun by collaborating on our spotify playlist{" "}
-          <a href="https://open.spotify.com/playlist/0uZ8qgeFIY8NzulA7e6Jma?si=da342a09d85545a2&pt=f3ab52f0498b7f5952921c64104bafd8">
+          <a
+            href="https://open.spotify.com/playlist/0uZ8qgeFIY8NzulA7e6Jma?si=da342a09d85545a2&pt=f3ab52f0498b7f5952921c64104bafd8"
+            target="_blank"
+          >
             here
           </a>
         </div>

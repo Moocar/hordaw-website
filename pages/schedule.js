@@ -14,17 +14,20 @@ function Schedule() {
           title="Pre-Wedding gathering"
           date="Friday, October 14, 2022"
           time="7:30pm onwards"
-          dressCode="Dresscode: Smart causal. 
+          dressCode="Dresscode: Smart causal.
           Dinner and drinks will be provided"
           imageName="/placeholder-wedding-svgrepo-com.svg"
-          address={<Address 
-            content={[
-            "Upstairs dining area",
-            "Dockside Restaurant and Bar",
-            "3 Queens Wharf",
-            "Wellington Central",
-            "Wellington 6011",
-            ]} />}
+          address={
+            <Address
+              content={[
+                "Upstairs dining area",
+                "Dockside Restaurant and Bar",
+                "3 Queens Wharf",
+                "Wellington Central",
+                "Wellington 6011",
+              ]}
+            />
+          }
           mapHref="https://goo.gl/maps/v7BMgBEb76v9i4VH9"
         />
         <Event
@@ -51,15 +54,23 @@ function Schedule() {
           date="Sunday, October 16, 2022"
           time="10:00 am onwards"
           imageName="/wedding-bells-svgrepo-com.svg"
-          address={<Address 
-            content={[
-            "Picnic Cafe",
-            "Wellington Botanical Gardens",
-            "Thorndon",
-            "Wellington 6012",
-            <a href="https://wellingtongardens.nz/assets/Documents/wellington-botanic-garden-map.pdf">How to get there</a> 
-            ]} />}
-          mapHref="https://goo.gl/maps/hBoWcsuKJuiJMw8e8"  
+          address={
+            <Address
+              content={[
+                "Picnic Cafe",
+                "Wellington Botanical Gardens",
+                "Thorndon",
+                "Wellington 6012",
+                <a
+                  href="https://wellingtongardens.nz/assets/Documents/wellington-botanic-garden-map.pdf"
+                  target="_blank"
+                >
+                  How to get there
+                </a>,
+              ]}
+            />
+          }
+          mapHref="https://goo.gl/maps/hBoWcsuKJuiJMw8e8"
         />
       </Events>
     </div>

@@ -11,7 +11,11 @@ function Page() {
         <div>
           Thanks for letting us know if you can join us!
           <br></br>
-          Please click on <a href="https://forms.gle/djkWeDfRQFZLxMF77"> this link </a>{" "}
+          Please click on{" "}
+          <a href="https://forms.gle/djkWeDfRQFZLxMF77" target="_blank">
+            {" "}
+            this link{" "}
+          </a>{" "}
           to RSVP by the 30th September{" "}
         </div>
       </section>
