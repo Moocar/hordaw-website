@@ -14,7 +14,7 @@ function Schedule() {
           title="Pre-Wedding gathering"
           date="Friday, October 14, 2022"
           time="7:30pm onwards"
-          dressCode="Dresscode: Smart causal.
+          dressCode="Dresscode: Smart casual.
           Dinner and drinks will be provided"
           imageName="/placeholder-wedding-svgrepo-com.svg"
           address={

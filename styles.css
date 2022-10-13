@@ -329,8 +329,21 @@ section.event {
   align-items: center;
 }
 
+.padded-content2 {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  display: flex;
+  flex-direction: column;
+  max-width: 660px;
+  align-items: left;
+}
+
 .body-content {
   /* padding-left: 0.5em; */
   /* padding-right: 0.5em; */
   width: 100%;
+}
+
+.centered {
+  text-align: center;
 }
