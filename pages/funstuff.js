@@ -89,7 +89,11 @@ function Page() {
           <li class="left-aligned">Little grump coffee</li>
           <li class="left-aligned">Scorchorama cafe</li>
           <li class="left-aligned">Leeds Street Bakery</li>
-          <li class="left-aligned">Kid Friendly Cafés</li>
+        </ul>
+      </section>
+      <section>
+        <h1 class="centered">Kid Friendly Cafés</h1>
+        <ul>
           <li class="left-aligned">Seashore Cabaret</li>
           <li class="left-aligned">Maranui</li>
           <li class="left-aligned">La Cloche - Kaiwharawhara</li>
